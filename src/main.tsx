@@ -4,10 +4,12 @@ import {Details} from './pages/Details/index.tsx'
 
 import { ThemeProvider } from 'styled-components'
 import theme from './styles/theme.ts'
+import GlobalStyle from './styles/global.ts'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider theme={theme} >
+      <GlobalStyle/>
       <Details />
     </ThemeProvider>
   </StrictMode>,

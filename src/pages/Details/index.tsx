@@ -1,10 +1,11 @@
 import { Header } from '../../components/Header'
 import { Section } from '../../components/Section'
-import { Notes } from './styles'
+import { Container, Notes } from './styles'
+import { Status } from '../../components/Status'
 
 export function Details(){
   return(
-    <>
+    <Container>
       <Header/>
       <Section title="Links úteis">
         <Notes>
@@ -13,6 +14,10 @@ export function Details(){
           <li>Item 3</li>
         </Notes>
       </Section>
-    </>
+
+      <Section title="Status">
+        <Status title="Pago"/>
+      </Section>
+    </Container>
   )
 }

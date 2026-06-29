@@ -41,7 +41,6 @@ export const Profile = styled.div`
             font-size: 18px;
             color: ${({theme}) => theme.COLORS.WHITE};
         }
-
     
     }
 

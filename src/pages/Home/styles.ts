@@ -55,4 +55,15 @@ export const Content = styled.div`
 
 export const NewSale = styled.button`
     grid-area: newsale;
+
+    background-color: ${({theme}) => theme.COLORS.ORANGE};
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > svg {
+        margin-right: 8px;
+    }
 `;

@@ -5,6 +5,8 @@ import {Container, Brand, Menu, Search, Content, NewSale} from './styles';
 import { Header } from '../../components/Header';
 import { ButtonText } from '../../components/ButtonText';
 import { Input } from '../../components/Input';
+import { Section } from '../../components/Section';
+import { Sale } from '../../components/Sale';
 
 
 export function Home(){
@@ -27,7 +29,9 @@ export function Home(){
             </Search>
 
             <Content>
-
+                <Section title="Minhas vendas">
+                    <Sale data={{name: 'Lydia', status: 'Pago'}}/>
+                </Section>
             </Content>
 
             <NewSale>
